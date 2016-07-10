@@ -34,10 +34,12 @@ for line in soup.select('.r-ent'):
 #record seen information
 filename = "seen.txt"
 f = open(filename, 'r+')
-seenPlace = f.readlines()
+seenPlace = [x.strip('\n') for x in f.readlines()]
+print seenPlace
 
 for choice in choices:
 	#if the new info coming send fb message to us
+	print choice
 	if choice["ID"] not in seenPlace:
 		executeScript = 'sendChat.js ' + Rick + " " + choice["title"] + " https://www.ptt.cc" + choice["ID"]
 		success = execute_js(executeScript)

@@ -38,7 +38,7 @@ seenPlace = f.readlines()
 
 for choice in choices:
 	#if the new info coming send fb message to us
-	if choice not in seenPlace:
+	if choice["ID"] not in seenPlace:
 		executeScript = 'sendChat.js ' + Rick + " " + choice["title"] + " https://www.ptt.cc" + choice["ID"]
 		success = execute_js(executeScript)
 		f.write(choice["ID"] + '\n')

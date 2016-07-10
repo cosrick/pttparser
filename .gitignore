@@ -1,3 +1,4 @@
 node_modules/
-seen.txt
+*.txt
 .DS_Store
+*.py

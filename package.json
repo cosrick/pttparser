@@ -1,0 +1,14 @@
+{
+  "name": "pttParser",
+  "version": "1.0.0",
+  "description": "",
+  "main": "sendChat.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "facebook-chat-api": "^1.1.0"
+  }
+}

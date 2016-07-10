@@ -1,0 +1,3 @@
+Naked
+beautifulsoup4
+request

@@ -32,9 +32,9 @@ var main = function(){
 					var newlist = houses.filter(function(house){
 						return history.indexOf(house.id) == -1
 					})
-					if (newlist != []){
+					if (newlist.length > 0){
 						sendChat(newlist);
-						return fs.appendFile('seen.txt', newlist.map(function(info){return info.id}).join('\n'))
+						return fs.appendFile('seen.txt', newlist.map(function(info){return info.id}).join('\n') + '\n') 
 					}
 				})
 				.catch(function(error){

@@ -16,7 +16,7 @@ var main = function(){
 	    .then(function ($) {
 	    	$('.title').each(function(i, el) {
 	    		var title = $(this).text();
-	    		if (title.indexOf('無') >= 0  && title.indexOf('北') >= 0){
+	    		if ((title.indexOf('無') >= 0 || title.indexOf('女') >= 0)  && title.indexOf('北') >= 0){
 	    			var item = new Object();
 	    			item.title = title.trim();
 	    			item.id = $(this).children().attr('href');
